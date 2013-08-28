@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>小米官网——小米2013年度发布会</title>
+		<style>
+		body,h1,h2,h3,h4,h5,h6,blockquote,p,pre,dl,dd,menu,ol,ul,caption,th,td,form,fieldset,legend,input,button,textarea{margin:0;padding:0}
+		h1,h2,h3,h4,h5,h6{font-size:100%}
+		menu,ol,ul,li{list-style:none}
+		table{border-collapse:collapse;border-spacing:0}
+		fieldset,img{border:0}
+		address,cite,dfn,em,var{font-style:normal}
+		code,kbd,pre,samp{font-family:'courier new',courier,monospace}
+		input,button,textarea,select{font-size:100%}
+		abbr[title]{border-bottom:1px dotted;cursor:help}
+		a{outline:0;text-decoration:none}
+		body,input,button,textarea,select,option,optgroup{font-family:"微软雅黑","宋体","黑体",Arial;font-size:12px;line-height:20px}
+		.clearfix{*zoom:1}
+		.clearfix:after{content:"\0020";display:block;height:0;clear:both;overflow:hidden;visibility:hidden}
+		body{ position: relative; background: #d80f17; padding-bottom: 150px;}
+		.main{ width: 960px; margin: 0px auto;}
+		.logo{margin-bottom: 94px;}
+		.logo a{display: block; width: 82px; height: 80px; background: url(http://p.www.xiaomi.com/zt/130827/logo.jpg) no-repeat; overflow: hidden; text-indent: -9999px;}
+		.title{font-size: 55px; line-height: 60px; color: #fff; font-weight: 700; margin-bottom: 26px;}
+		.subtitle{font-size: 18px; line-height: 30px; color: #fff; margin-bottom: 48px;}
+		.btns{margin-bottom: 128px;}
+		.btns a{display: inline-block;width: 172px; height: 46px; line-height: 46px; text-align: center; border-radius: 6px; font-size: 16px;} 
+		.btns a.app{ color: #663300; background: #ffd800; margin-right: 10px;} 
+		.btns a.home{ color: #d80f17; background: #ffffff;}
+		.message { position: relative; height: 810px; color:#333333; font-size: 14px; padding: 0px 50px 0px; background: #fff;}
+		.message .line{position: absolute; top: -16px; left: 0px; z-index: 1; width: 960px; height: 16px; 
+			background: url(http://p.www.xiaomi.com/zt/130827/line.png) no-repeat;
+			_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://p.www.xiaomi.com/zt/130827/line.png");
+			_background:none;  
+		}
+
+		.message .weapon{position: absolute; right: 0px; top: -500px; z-index: 1; width: 339px; height: 603px; background: url(http://p.www.xiaomi.com/zt/130827/weapon.png) no-repeat;
+			_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://p.www.xiaomi.com/zt/130827/weapon.png"); 
+			_background:none;
+		}
+		.message .info{position: absolute; left: 50px; top: 56px; z-index: 2; width: 860px; background: #fff; border-radius: 20px; overflow: hidden;}
+		.message .first{ margin-bottom: 35px;}
+		.message .left{float: left; overflow: hidden; _display: inline;}  
+		.message .time{ width: 268px;  background: url(http://p.www.xiaomi.com/zt/130827/time.jpg?v1) no-repeat;}
+		.message .time p{margin: 60px 0px 0px 60px;}  
+		.message .addr{width: 448px; background: url(http://p.www.xiaomi.com/zt/130827/addr.jpg?v1) no-repeat;}
+		.message .addr p{margin: 60px 0px 0px 45px;}     
+		.message .addr p a{color:#ff0000;}
+		.message .map{width: 140px; text-align: center;color:#333333;}
+		.message .map a{cursor: pointer;}
+		.message .map label{display: block;color:#333333;}
+		.message .second{margin-bottom: 60px;}  
+		.message .second ul{margin-top: 40px;}
+		.message .second li{float: left; width: 25%; text-align: center;}  
+		.message .second li p{ margin-top: 18px; font-size: 12px;} 
+		.message .third{}
+		.message .third .lt{float: left; width: 325px;}
+		.message .third .lt .tv{overflow: hidden;}
+		.message .third .lt .tv a{display: block; width: 310px; margin: 20px auto 0px;}
+		.message .third .rt{float: right; width: 490px;}  
+		.message .third .rt p{padding-top: 20px; font-size: 13px; line-height: 30px; color: #666666;}
+		.message .mtitle{ position: relative; font-size: 18px; height: 39px; border-bottom: 1px solid #e5e5e5; overflow: hidden;}   
+		.message .mtitle .more{ position: absolute; right: 0px; bottom: 18px; z-index: 1; display: block; width: 100px; height: 20px; text-align: right; *zoom:1; font-size: 12px; color: #333;} 
+		.boxbg{position: absolute; top: 0px; left:0px; width: 100%; height: 100%; z-index: 999; background: #ff0000; opacity: 0.3; filter:alpha(opacity=30); display: none;}
+		.box{position: absolute; top: 210px; left: 50%; margin-left: -480px; z-index: 9999; display: none; background: #fff; padding: 10px 20px 20px 20px; border-radius: 6px; width: 920px;}
+		.box .btitle{ width: 920px; height: 40px; line-height: 40px; zoom:1; }  
+		.box .btitle div{padding-left: 20px; font-size: 16px; color:#656D78;}
+		.box .btitle .closed{ float: right; display: block; width: 20px; height: 20px; text-align: center; font-size: 18px; color: #000; border-radius: 20px; cursor: pointer; }
+		.box .btitle .closed:hover{}  
+		.footer{color:#777;text-align:center;padding:30px 0 40px 0; background: #fff; border-top: 1px solid #e5e5e5; }  
+	 	.footer a{color:#777;margin:0 5px;}   
+		.footer a.hover{text-decoration:underline;}
+		.footer img{margin-top:20px;}  
+		</style>  
+	</head>
+	<body>
+		<div class="main">
+			<div class="logo"><a href="http://www.xiaomi.com/index.php" title="小米官网">小米官网</a></div>
+			<div>
+				<div class="title">小米2013年度发布会</div>
+				<div class="subtitle">8月28日中午12点  发布会入场券购买<br/>仅在小米商城APP销售</div>
+				<div class="btns">
+					<a class="app" href="http://www.xiaomi.com/c/appdownload/">下载小米商城APP</a>
+					<a class="home" href="http://www.xiaomi.com/index.php">进入小米网</a>
+				</div>
+			</div>
+			<div class="message">
+				<div id="line" class="line"></div>
+				<div id="weapon" class="weapon" style="display:none;"></div>
+				<div class="info">
+					<div class="first clearfix">
+						<div class="left time"> 
+							<p>
+								签到时间：9月5日13:00<br/>
+								开始时间：9月5日14:00
+							</p>
+						</div>
+						<div class="left addr">
+							<p>
+								活动场馆：北京国家会议中心一层大宴会厅B+C（C4口进入）<br/>
+								活动地址：<a href="http://map.baidu.com/?newmap=1&s=con%26wd%3D%E5%8C%97%E4%BA%AC%E5%B8%82%E6%9C%9D%E9%98%B3%E5%8C%BA%E5%A4%A9%E8%BE%B0%E4%B8%9C%E8%B7%AF7%E5%8F%B7%26c%3D131&fr=alae0&ext=1&from=alamap" target="_blank">北京市朝阳区天辰东路7号>></a>
+							</p>
+						</div>
+						<div class="left map">
+							<a id="btnmap">
+								<img alt="" src="http://p.www.xiaomi.com/zt/130827/map.jpg" />
+								<label>点击放大</label>
+							</a>
+						</div>
+					</div>
+					<div class="second">
+						<div class="mtitle">发布会签到参与流程</div>
+						<ul class="clearfix">
+							<li>
+								<img alt="" src="http://p.www.xiaomi.com/zt/130827/step1.jpg?v1" />
+								<p>
+									准时到达国家会议中心，<br/>凭纸质邀请函签到。
+								</p>
+							</li>
+							<li>
+								<img alt="" src="http://p.www.xiaomi.com/zt/130827/step2.jpg?v1" />
+								<p>
+									通过安检并完成签到后，<br/>领取入场装备，进入会场。
+								</p>
+							</li>
+							<li>
+								<img alt="" src="http://p.www.xiaomi.com/zt/130827/step3.jpg?v1" />
+								<p>
+									发布会开始，在现场亲眼见证<br/>小米新品的发布。
+								</p>
+							</li>
+							<li>
+								<img alt="" src="http://p.www.xiaomi.com/zt/130827/step4.jpg?v1" />
+								<p>
+									发布会结束，移步体验区，<br/>亲手把玩最新发布的产品。
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="third clearfix">
+						<div class="lt">
+							<div class="mtitle">
+								2012发布会精彩回顾
+								<a href="http://bbs.xiaomi.cn/forum.php?mod=viewthread&tid=4368132" class="more" target="_blank">查看更多》</a>
+							</div>
+							<div class="tv">
+								<a href="http://bbs.xiaomi.cn/forum.php?mod=viewthread&tid=4368132" class="more" target="_blank">
+									<img alt="" src="http://p.www.xiaomi.com/zt/130827/two.jpg" />
+								</a>
+							</div>
+						</div>
+						<div class="rt">
+							<div class="mtitle">
+								购票须知
+								<a href="http://bbs.xiaomi.cn/thread-7890903-1-1.html" class="more" target="_blank">详细规则》</a>
+							</div>
+							<p>
+								<strong>资格</strong> 本次抢购仅限9月27日24:00前MIUI论坛或小米社区积分达100以上用户。<br/>
+								<strong>支付</strong> 请在两小时内完成支付，逾期将自动取消订单。<br/>
+								<strong>信息</strong> 请在完成支付后，填写您的真实姓名、收货地址并上传您本人的照片。<br/>
+								<strong>邀请函</strong> 购票成功后我们会快递寄出您的纸质邀请函，请确保收货地址正确可送达。<br/>
+								<strong>入场</strong> 入场式需要您携带纸质邀请函作为入场凭证。<br/> 
+								<strong>礼品</strong> 发布会纪念品需在发布会结束后现场领取，如无法前往现场视为放弃赠品。
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="footer">
+		        <div>&copy;2013<a href="http://www.xiaomi.com/index.php" target="_blank" title="xiaomi.com">xiaomi.com</a><span>京ICP证110507号 京ICP备10046444号 京公网安备110105018986号</span>旗下网站：<a href="http://www.xiaomi.com/index.php" target="_blank" title="小米网">小米网</a><a href="http://www.miui.com" target="_blank" title="MIUI">MIUI</a><a href="http://www.miliao.com" target="_blank" title="米聊">米聊</a><a href="http://book.duokan.com" target="_blank" title="多看书城">多看书城</a><a href="http://hk.xiaomi.com" target="_blank" title="繁體香港">繁體香港</a><a href="http://tw.xiaomi.com" target="_blank" title="繁體台灣">繁體台灣</a></div><img alt="" src="http://p.www.xiaomi.com/open/130514/home/footerbg.png">
+		    </div>
+		</div>
+		<div id="boxbg" class="boxbg"></div>
+		<div id="box" class="box">
+			<div class="btitle">
+				<a id="closed" class="closed" title="关闭">x</a>
+				<div>小米2013年度发布会</div>
+			</div>
+			<div class="bcont">
+				<img alt="" src="http://p.www.xiaomi.com/zt/130827/bigmap.jpg?v10" />
+			</div>
+		</div>
+		<script>
+			var m = {
+				$:function(){
+		            return typeof arguments[0] === "string" ? document.getElementById(arguments[0]):arguments[0];
+		        },
+		        addEvent: function(el,type,fn){
+		            if (document.addEventListener) {
+		                el.addEventListener(type, fn, false);
+		            }
+		            else{
+	                    el.attachEvent('on' + type, fn);
+		            }
+		        },
+		        map: function(){
+		        	var _this = this,
+		        	btnmap = _this.$("btnmap"),
+		        	boxbg = _this.$("boxbg"),
+		        	box = _this.$("box"),
+		        	closed = _this.$("closed");
+		        	_this.addEvent(btnmap,"click",function(){
+		        		boxbg.style.height = Math.max(document.body.scrollHeight,document.documentElement.clientHeight) +"px";
+		        		boxbg.style.display = "block";
+		        		box.style.display = "block";
+		        	});
+
+		        	_this.addEvent(closed,"click",function(){
+		        		boxbg.style.display = "none";
+		        		box.style.display = "none";
+		        	}); 
+		        },
+		        run: function(){
+		        	var _this = this,
+		        	weapon = _this.$("weapon"),
+		        	line = _this.$("line"),
+		        	stop = null,
+		        	tmptop = 0,
+		        	tmptime = 0; 
+	        		weapon.style.display="block";
+	        		stop = setInterval(function(){
+		        		tmptop+=-50;  
+		        		weapon.style.top = tmptop + "px";
+		        		if(tmptop<-500){
+		        			clearInterval(stop);
+		        		}
+		        	},60);  
+		        },
+		        init: function(){
+		        	var _this = this;
+		        	_this.run();  
+		        	_this.map();  
+		        }
+			}
+			
+			m.init();
+		</script>
+		<script>var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-24946561-1']);_gaq.push(['_addOrganic','baidu','word']);_gaq.push(['_addOrganic','soso','w']);_gaq.push(['_addOrganic','vnet','kw']);_gaq.push(['_addOrganic','sogou','query']);_gaq.push(['_addOrganic','youdao','q']);_gaq.push(['_addOrganic','so','q']);_gaq.push(['_setDomainName','xiaomi.com']);_gaq.push(['_setAllowLinker',true]);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+		<script>(function() {var mst = document.createElement('script'); mst.type = 'text/javascript'; mst.async = true;mst.src = "http://p.www.xiaomi.com/js/mst.js?v3111";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(mst, s);})();</script>
+	</body>
+</html>
